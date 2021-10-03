@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='add_user.css') }}">
+    <title>Title</title>
+</head>
+<body>
+ <nav>
+   <ul>
+        <div class="width_1 back link">
+        <b><a href="/" class="text">База пользователей</a></b>
+        <a href="/" class="text">Все пользователи</a>
+        <a href="/search" class="text">Поиск</a>
+        <a href="/add_user" class="text">Добавить</a>
+        </div>
+   </ul>
+   </nav>
+<ul>
+    <h1>Добавить пользователя</h1>
+    <form method="post">
+        <div class="container">
+        <input class="inp_1 width back" type="text" placeholder="Имя" name="name">
+        <input class="inp_2 width back" type="text" placeholder="Возраст" name="age">
+        <input class="inp_3 back" type="checkbox" name="is_blocked"><span class='name-text'> Заблокирован</span>
+        <input class="inp_4 back" type="date" placeholder="dd.mm.yyyy" name="unblock_date">
+        <input class="btn" type="submit" value="Добавить">
+        </div>
+    </form>
+</ul>
+</body>
+</html>

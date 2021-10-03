@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='search.css') }}">
+    <title>Title</title>
+</head>
+<body>
+ <nav>
+   <ul>
+        <div class="width back link">
+        <b><a href="/" class="text">База пользователей</a></b>
+        <a href="/" class="text">Все пользователи</a>
+        <a href="/search" class="text">Поиск</a>
+        <a href="/add_user" class="text">Добавить</a>
+        </div>
+   </ul>
+   </nav>
+<ul>
+    <h1>Поиск</h1>
+    <form>
+        <input class="inp" type="search" placeholder="Введите имя пользователя">
+        <input class="btn" type="submit" value="Найти">
+    </form>
+    <p>Найдено: {{count_users}}</p>
+{% for user in all_users %}
+    <p class = 'width back'> <span class='name-text'> {{ user.name }}</span>, {{ user.age }},
+        {% if user.is_blocked %} заблокирован,
+        разблокируется {{ user.unblock_date }} {% endif %} </p>
+{% endfor %}
+</ul>
+</body>
+</html>

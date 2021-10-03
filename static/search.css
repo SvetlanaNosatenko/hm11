@@ -1,0 +1,27 @@
+.width {width: 800px;}
+
+.name-text {color: #733636;
+font-size: 20px;}
+
+.text {padding-right: 30px;}
+
+.link a {
+text-decoration:none;
+color:black;
+}
+
+.back {background-color: #e5e1e1;
+padding: 10px;}
+
+.btn {color: #000000;
+background-color: #b0acac;
+padding-top: 6px;
+padding-bottom: 6px;
+padding-left: 15px;
+padding-right: 15px;
+border-radius: 5px;
+border: none;}
+
+.inp {width: 400px;
+height: 28px;
+border-radius: 5px;}

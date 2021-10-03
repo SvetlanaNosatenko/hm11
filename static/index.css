@@ -1,0 +1,14 @@
+.width {width: 800px;}
+
+.name-text {color: #733636;
+font-size: 20px;}
+
+.text {padding-right: 30px;}
+
+.back {background-color: #e5e1e1;
+padding: 10px;}
+
+.link a {
+text-decoration:none;
+color:black;
+}
