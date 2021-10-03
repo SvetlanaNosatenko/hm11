@@ -4,9 +4,9 @@ from flask import Flask
 
 ## Getting started
 
-app = Flask(__name__)
+<app = Flask(__name__)>
 
 ## Dependencies
 
-@app.route('')
-app.run()
+<p><@app.route('')></p>
+<p><app.run()></p>
