@@ -5,11 +5,11 @@
 
 **Импорт фреймворка:**
 
-⋅⋅*from flask import Flask
+from flask import Flask
 
 **Определение объекта класса Flask:**
 
-⋅⋅*app = Flask(_\_name__)
+app = Flask(_\_name__)
 
 ## Dependencies
 
@@ -17,14 +17,17 @@
 Во Flask декоратор route используется, чтобы связать URL адрес с функций.
 
 **Функция:**
-*def index():
+
+def index():
 
 **Результат работы:**
-*return
+
+return
 
 **Обработка маршрута:**
 
-*@app.route('')
+@app.route('')
 
 **Запуск приложения:**
-⋅⋅*app.run()
+
+app.run()
