@@ -1,12 +1,29 @@
 # flask-app
 
-from flask import Flask
 
 ## Getting started
 
-<app = Flask(__name__)>
+**Импорт фреймворка:**
+
+⋅⋅*from flask import Flask
+
+**Определение объекта класса Flask:**
+
+⋅⋅*app = Flask(_\_name__)
 
 ## Dependencies
 
-<p><@app.route('')></p>
-<p><app.run()></p>
+Маршрут (или путь) используется во фреймворке Flask для привязки URL к функции представления. Эта функция отвечает на запрос. 
+Во Flask декоратор route используется, чтобы связать URL адрес с функций.
+
+**Функция:**
+⋅⋅*def index():
+**Результат работы:**
+⋅⋅*return
+
+**Обработка маршрута:**
+
+⋅⋅*@app.route('')
+
+Запуск приложени:
+⋅⋅*app.run()
